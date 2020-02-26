@@ -11,6 +11,8 @@ exports.up = function(knex) {
         .notNullable()
 
         tbl.string('department', 255)
+        .defaultTo('user')
+        .notNullable()
   })
 };
 
